@@ -3,6 +3,8 @@ const appDiv = "root";
 
 let home = "";
 let about = "";
+let products = "";
+let companyProfile = "";
 let contact = "";
 
 const loadPage = async (page) => {
@@ -44,6 +46,18 @@ template("about", async () => {
   return myDiv;
 });
 
+template("products", async () => {
+  products = await loadPage("./pages/products.html");
+  let myDiv = document.getElementById(appDiv);
+  myDiv.innerHTML = products;
+  return myDiv;
+});
+template("company-profile", async () => {
+  companyProfile = await loadPage("./pages/company-profile.html");
+  let myDiv = document.getElementById(appDiv);
+  myDiv.innerHTML = companyProfile;
+  return myDiv;
+});
 template("contact", async () => {
   contact = await loadPage("./pages/contact.html");
   let myDiv = document.getElementById(appDiv);
@@ -54,6 +68,8 @@ template("contact", async () => {
 // Define the mappings route->template.
 route("/", "home");
 route("/about", "about");
+route("/products", "products");
+route("/company-profile", "company-profile");
 route("/contact", "contact");
 
 // Generate DOM tree from a string
