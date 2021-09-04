@@ -1,8 +1,41 @@
+@import "./home.css";
+
 :root {
   --black: #121212;
   --white: #ffffff;
-  --primary: #faebd7;
-  --primary2: #492900;
+  --primary: #ffe8ca;
+  --primary2: #925a11;
+  --gray: #8b8b8b;
+
+  --navbarHeight: 150px;
+  --footerHeight: 20vh;
+}
+
+.defaultLink {
+  padding: 10px 25px;
+  background-color: var(--primary);
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: box-shadow 200ms ease-in-out;
+}
+
+.defaultLink2 {
+  padding: 10px 25px;
+  background-color: var(--white);
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  border: 1px solid var(--gray);
+  color: var(--black);
+  transition: box-shadow 200ms ease-in-out;
+}
+
+.defaultLink:hover {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+.defaultLink2:hover {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 * {
@@ -16,41 +49,61 @@
 body {
   width: 100%;
   min-height: 100vh;
-}
-
-nav {
-  width: 100%;
-  height: 200px;
-  display: flex;
-  /* align-items: center; */
-  justify-content: space-between;
-  padding: 0 10vh;
-  box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.1);
-  background-color: var(--primary);
   position: relative;
 }
 
-nav > ul {
+header {
+  height: var(--navbarHeight);
+  position: relative;
   display: flex;
-  /* align-items: center; */
-  align-items: flex-end;
-  margin: 20px 0;
-  justify-content: space-between;
-  gap: 50px;
-  list-style: none;
-  font-size: 1.2rem;
+  align-items: center;
+  gap: 10%;
+  padding: 0 10%;
+  user-select: none;
+}
+.contactContainer {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translateX(-50%) translateY(calc(-50% - 20px));
+  display: flex;
 }
 
-nav > ul > li > a {
+.contactContainer > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 10px;
+}
+
+header ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  list-style: none;
+  transform: translateY(-20px);
+}
+
+header ul a {
   text-decoration: none;
 }
 
 .logo img {
-  width: 200px;
+  width: 150px;
 }
 
+/* ----------- */
+/* ----------- */
+/* ----------- */
+/* ----------- */
+/* ----------- */
+/* ----------- */
+/* ----------- */
+
 footer {
-  height: 20vh;
+  height: var(--footerHeight);
   background-color: black;
   color: var(--white);
   display: flex;
@@ -60,10 +113,9 @@ footer {
 
 #root {
   width: 100%;
-  min-height: calc(100vh - 20vh - 70px);
-  /*----*/
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /*----*/
+}
+
+section {
+  width: 100%;
+  min-height: calc(100vh - var(--footerHeight) - var(--navbarHeight));
 }

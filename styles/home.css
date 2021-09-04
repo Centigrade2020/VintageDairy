@@ -1,0 +1,27 @@
+.home {
+  padding: 0 10%;
+}
+
+.home > .homeWrapper {
+  width: 100%;
+}
+
+.home > .homeWrapper > h1 {
+  font-size: 3rem;
+  margin: 5vh 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.home > .homeWrapper > p {
+  margin-bottom: 3vh;
+  font-style: italic;
+  width: 40%;
+}
+.home > .homeWrapper > p > span {
+  font-weight: bold;
+}
+
+.home > .homeWrapper > .homeButtonsContainer {
+  display: flex;
+  gap: 30px;
+}
