@@ -14,11 +14,14 @@ h1{
 }
 
 p{
-    text-align: left;
+    text-align:left;
     
 }
 .ghee img{
     width: 100px;
+    height:100px;
+    position: absolute; top: 350px;
+    
     
 }
 
