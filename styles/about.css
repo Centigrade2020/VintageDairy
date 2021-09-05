@@ -1,36 +1,29 @@
-.about{ 
-    width:50%;
-    top: -12px;
-    margin-left: 50px;
-
+.about {
+  width: 50%;
+  top: -12px;
+  margin-left: 50px;
 }
 
-.inner-container{
-    background-color: #ffddb0;
-    width: 120%;
-    border:2px;
-    border-style: solid;
-    border-color: brown;
-    border-radius: 30px;
-  
-
-
+.about .inner-container {
+  background-color: #ffddb0;
+  width: 120%;
+  border: 2px;
+  border-style: solid;
+  border-color: brown;
+  border-radius: 30px;
 }
 
-h1{
+.about h1 {
   font-size: 2rem;
   font-family: "Roboto", sans-serif;
   color: brown;
   padding: 10px;
   font-style: italic;
-
-
 }
 
-p{
-margin: 10px;
-font-style: italic;
-font-size:x-medium;
-text-align: justify;
+.about p {
+  margin: 10px;
+  font-style: italic;
+  font-size: x-medium;
+  text-align: justify;
 }
-

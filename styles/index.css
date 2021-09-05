@@ -43,7 +43,7 @@ header {
 .contactContainer {
   position: absolute;
   top: 50%;
-  right: 5%;
+  right: 0;
   transform: translateX(-50%) translateY(calc(-50% - 20px));
   display: flex;
 }
