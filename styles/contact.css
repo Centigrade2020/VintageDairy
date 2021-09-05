@@ -1,0 +1,41 @@
+.contact {
+  position: relative;
+}
+
+.contactWrapper {
+  display: flex;
+  width: 60%;
+  margin: 20px auto;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact form,
+.contact .contactDetails {
+  width: 50%;
+  height: 400px;
+  background-color: white;
+}
+
+.contact form {
+  background-color: var(--primary0);
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+.contact form p {
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.contact form input,
+.contact form button {
+  width: 85%;
+  padding: 15px;
+  margin: 10px auto;
+  border: none;
+  outline: none;
+}

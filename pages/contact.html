@@ -1,18 +1,41 @@
 <section class="contact">
-  <form>
-    <input type="email" id="email" placeholder="Your Email....." />
-    <input type="text" id="phonenum" placeholder="Your Contact....." />
-    <button type="submit">Send inquiry</button>
-  </form>
-  <div class="contact-details">
-    <h1>Contact Details</h1>
-    <h2>RAJU DAIRY</h2>
-    <p>
-      B No. 15w-6/23 Kandiyamman Kovil Street,
-      Bodinayakanur-Meenatchipuram,Theni - 625582, Tamil Nadu, India
-    </p>
-    <p>Phone : 08035948022</p>
-    <p>Mr Nataraj (Proprietor)</p>
-    <p>Mobile : 08035948022</p>
+  <div class="contactWrapper">
+    <form id="myform" onsubmit="onSubmit()">
+      <p>Enquiry</p>
+      <input type="text" id="name" placeholder="Name" />
+      <input type="email" id="email" placeholder="Email" />
+      <input type="text" id="phonenum" placeholder="Phone Number" />
+      <button type="submit">Send inquiry</button>
+    </form>
+    <div class="contactDetails">
+      <h1>Contact us</h1>
+      <div class="contactContent">
+        <p>
+          <img
+            src="../assets/svgs/address.svg"
+            alt=""
+            style="transform: translateY(8px)"
+          />
+          B No. 15w-6/23 Kandiyamman Kovil Street,
+          Bodinayakanur-Meenatchipuram,Theni - 625582, Tamil Nadu, India
+        </p>
+        <p>
+          <img
+            src="../assets/svgs/phone.svg"
+            alt=""
+            style="transform: translateY(5px)"
+          />
+          08035948022
+        </p>
+        <p>
+          <img
+            src="../assets/svgs/profile.svg"
+            alt=""
+            style="transform: translateY(5px)"
+          />Mr Nataraj (Proprietor)
+        </p>
+        <p>Mobile : 08035948022</p>
+      </div>
+    </div>
   </div>
 </section>
