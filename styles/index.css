@@ -1,41 +1,19 @@
 @import "./home.css";
+@import "./company-profile.css";
+@import "./products.css";
 
 :root {
   --black: #121212;
   --white: #ffffff;
-  --primary: #ffe8ca;
-  --primary2: #925a11;
-  --gray: #8b8b8b;
+  --primary0: #ffddb0;
+  --primary: #c57000;
+  --primary2: #fff5e9;
+  --gray: #808080;
+  --lightgray: #b4b4b4;
+  --link: rgb(255, 0, 0);
 
   --navbarHeight: 150px;
   --footerHeight: 20vh;
-}
-
-.defaultLink {
-  padding: 10px 25px;
-  background-color: var(--primary);
-  border-radius: 20px;
-  text-decoration: none;
-  font-weight: 500;
-  transition: box-shadow 200ms ease-in-out;
-}
-
-.defaultLink2 {
-  padding: 10px 25px;
-  background-color: var(--white);
-  border-radius: 20px;
-  text-decoration: none;
-  font-weight: 500;
-  border: 1px solid var(--gray);
-  color: var(--black);
-  transition: box-shadow 200ms ease-in-out;
-}
-
-.defaultLink:hover {
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-}
-.defaultLink2:hover {
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 * {
@@ -109,6 +87,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 #root {
@@ -118,4 +97,52 @@ footer {
 section {
   width: 100%;
   min-height: calc(100vh - var(--footerHeight) - var(--navbarHeight));
+  position: relative;
 }
+
+/* ------------------------------------------------------------------- */
+
+.defaultLink {
+  padding: 10px 25px;
+  background-color: var(--primary);
+  color: white;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: box-shadow 200ms ease-in-out;
+}
+
+.defaultLink2 {
+  padding: 10px 25px;
+  background-color: var(--white);
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  border: 1px solid var(--gray);
+  color: var(--black);
+  transition: box-shadow 200ms ease-in-out;
+}
+
+.defaultLink:hover {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+.defaultLink2:hover {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.link1 {
+  text-decoration: none;
+  color: var(--link);
+}
+
+.bgLayer {
+  width: 50%;
+  height: 120vh;
+  position: fixed;
+  background-color: var(--primary0);
+  clip-path: ellipse(71% 100% at 99% 86%);
+  transform: translateX(5%);
+  right: 0;
+}
+
+/* ------------------------------------------------------------------- */
