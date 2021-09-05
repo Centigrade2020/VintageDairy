@@ -1,8 +1,11 @@
 <section class="contact">
-  <form>
+  <form id="myform">
     <input type="email" id="email" placeholder="Enter your email" />
     <input type="text" id="phonenum" placeholder="Enter your phone number" />
     <button type="submit">Send inquiry</button>
+
+    <input type="text" name="name" id="name" />
+    <button type="button">Send inquiry</button>
   </form>
   <div class="contact-details">
     <h1>Contact Details</h1>
@@ -15,4 +18,29 @@
     <p>Mr Nataraj (Proprietor)</p>
     <p>Mobile : 08035948022</p>
   </div>
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
+  ></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("user_jPvpFZ5eOyUbbOPoxAPYC");
+    })();
+
+    document.getElementById("myform").addEventListener("submit", function () {
+      let name = document.getElementById("name").value;
+      let email = document.getElementById("email").value;
+
+      const contactParams = {
+        from_name: name,
+        from_email: email,
+        messages: "test",
+      };
+      emailjs
+        .send("service_qi07cwl", "template_clfjccd", contactParams)
+        .then((res) => {
+          res;
+        });
+    });
+  </script>
 </section>
