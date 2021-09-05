@@ -140,7 +140,7 @@ section {
   height: 120vh;
   position: fixed;
   background-color: var(--primary0);
-  clip-path: ellipse(71% 100% at 99% 86%);
+  clip-path: ellipse(75% 100% at 99% 86%);
   transform: translateX(5%);
   right: 0;
 }

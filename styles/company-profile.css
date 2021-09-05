@@ -1,7 +1,14 @@
+.companyProfile {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  /* background-color: rebeccapurple; */
+  justify-content: space-evenly;
+}
+
 .timeline {
   position: relative;
-  max-width: 900px;
-  margin: 0 auto;
+  width: 900px;
   /* background-color: rebeccapurple; */
   padding-bottom: 10vh;
 }
@@ -198,4 +205,9 @@
     transform: translateX(0);
     opacity: 1;
   }
+}
+
+.certificateContainer img {
+  width: 400px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
 }
