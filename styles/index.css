@@ -1,6 +1,7 @@
 @import "./home.css";
 @import "./company-profile.css";
 @import "./products.css";
+@import "./contact.css";
 
 :root {
   --black: #121212;
