@@ -72,23 +72,6 @@ route("/products", "products");
 route("/company-profile", "company-profile");
 route("/contact", "contact");
 
-// Generate DOM tree from a string
-let createDiv = (id, xmlString) => {
-  let d = document.createElement("div");
-  d.id = id;
-  d.innerHTML = xmlString;
-  return d.firstChild;
-};
-// Helper function to create a link.
-let createLink = (title, text, href) => {
-  let a = document.createElement("a");
-  let linkText = document.createTextNode(text);
-  a.appendChild(linkText);
-  a.title = title;
-  a.href = href;
-  return a;
-};
-
 // Give the correspondent route (template) or fail
 let resolveRoute = (route) => {
   try {
