@@ -2,9 +2,15 @@
   <div class="contactWrapper">
     <form id="myform" onsubmit="console.log('hello')">
       <p>Enquiry</p>
-      <input type="text" id="name" placeholder="Name" />
-      <input type="email" id="email" placeholder="Email" />
-      <input type="text" id="phonenum" placeholder="Phone Number" />
+      <input type="text" id="name" placeholder="Name" required />
+      <input type="email" id="email" placeholder="Email" required />
+      <input
+        type="tel"
+        id="phone"
+        pattern="[0-9]{10}"
+        placeholder="Phone number"
+        required
+      />
       <button type="submit">Send inquiry</button>
     </form>
     <div class="contactDetails">

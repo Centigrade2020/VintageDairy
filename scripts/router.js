@@ -10,7 +10,6 @@ let contact = "";
 const loadPage = async (page) => {
   const response = await fetch(page);
   const resHtml = await response.text();
-  console.log(resHtml);
   return resHtml;
 };
 
