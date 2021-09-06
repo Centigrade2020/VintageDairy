@@ -87,15 +87,24 @@
   transform: translateX(0);
   display: flex;
   animation: hGallery 8s infinite;
-  animation-delay: 1s;
+  animation-delay: 2s;
 }
 
 @keyframes hGallery {
-  33% {
+  30% {
     transform: translateX(-100%);
   }
-  66% {
+  40% {
+    transform: translateX(-100%);
+  }
+  60% {
     transform: translateX(-200%);
+  }
+  70% {
+    transform: translateX(-200%);
+  }
+  90% {
+    transform: translateX(-300%);
   }
   100% {
     transform: translateX(-300%);

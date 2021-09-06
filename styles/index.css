@@ -15,6 +15,9 @@
 
   --navbarHeight: 150px;
   --footerHeight: 20vh;
+
+  --productWidth: 680px;
+  --productHeight: 380px;
 }
 
 * {
