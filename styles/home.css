@@ -86,24 +86,24 @@
 .galleryWrapper {
   transform: translateX(0);
   display: flex;
-  animation: hGallery 8s infinite;
+  animation: hGallery 10s infinite;
   animation-delay: 2s;
 }
 
 @keyframes hGallery {
-  30% {
+  16.5% {
     transform: translateX(-100%);
   }
-  40% {
+  33% {
     transform: translateX(-100%);
   }
-  60% {
+  49.5% {
     transform: translateX(-200%);
   }
-  70% {
+  66% {
     transform: translateX(-200%);
   }
-  90% {
+  82.5% {
     transform: translateX(-300%);
   }
   100% {
