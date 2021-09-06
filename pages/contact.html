@@ -1,6 +1,6 @@
 <section class="contact">
   <div class="contactWrapper">
-    <form id="myform" onsubmit="console.log('hello')">
+    <form id="myform">
       <p>Enquiry</p>
       <input type="text" id="name" placeholder="Name" required />
       <input type="email" id="email" placeholder="Email" required />
@@ -11,7 +11,7 @@
         placeholder="Phone number"
         required
       />
-      <button type="submit">Send inquiry</button>
+      <button onclick="sendMail()">Send inquiry</button>
     </form>
     <div class="contactDetails">
       <h1>Contact us</h1>
