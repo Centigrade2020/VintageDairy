@@ -72,22 +72,24 @@
 }
 
 .homeGallery .imgContainer {
-  width: 33vw;
-  height: 33vw;
+  min-width: 450px;
+  min-height: 450px;
+  max-width: 450px;
+  max-height: 450px;
   overflow: hidden;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 .homeGallery .imgContainer img {
-  max-height: 33vw;
-  min-height: 33vw;
+  max-height: 450px;
+  min-height: 450px;
 }
 
 .galleryWrapper {
   transform: translateX(0);
   display: flex;
   animation: hGallery 10s infinite;
-  animation-delay: 2s;
+  animation-delay: 3.5s;
 }
 
 @keyframes hGallery {

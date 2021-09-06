@@ -202,14 +202,21 @@
   animation-delay: 2200ms;
 }
 
-@keyframes cpAnim {
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
+.certificateContainer {
+  transform: translateX(50px);
+  opacity: 0;
+  animation: cpAnim 1s forwards;
 }
 
 .certificateContainer img {
   width: 400px;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* ----------------- */
+@keyframes cpAnim {
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
