@@ -8,7 +8,7 @@
 
 .timeline {
   position: relative;
-  width: 900px;
+  min-width: 900px;
   /* background-color: rebeccapurple; */
   padding-bottom: 10vh;
 }
@@ -31,7 +31,7 @@
   padding: 10px 40px;
   position: relative;
   background-color: inherit;
-  width: 50%;
+  width: 42%;
 }
 
 /* The circles on the timeline */
@@ -51,12 +51,13 @@
 
 /* Place the container to the left */
 .timeline .left {
-  left: -5px;
+  left: calc(8% - 5px);
 }
 
 .timeline .left .content {
   transform: translateX(-20px);
   opacity: 0;
+
   animation: cpAnim 600ms forwards;
 }
 
@@ -107,7 +108,7 @@
 
 /* The actual content */
 .timeline .content {
-  padding: 20px 30px;
+  padding: 15px 20px;
   background-color: var(--primary2);
   position: relative;
   border-radius: 6px;
@@ -116,11 +117,12 @@
 
 .timeline .content p {
   color: var(--gray);
+  font-size: 0.9rem;
 }
 
 .timeline .content h2 {
   font-weight: 500;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */

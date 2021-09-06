@@ -63,7 +63,7 @@ header ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 50px;
+  gap: 30px;
   list-style: none;
   transform: translateY(-20px);
 }
