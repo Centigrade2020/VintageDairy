@@ -5,15 +5,15 @@
 }
 
 .about .inner-container {
-  background-color: #ffddb0;
+
   width: 120%;
   border: 2px;
   border-style: solid;
   border-color: brown;
-  border-radius: 30px;
+ 
 }
 
-.about h1 {
+.about h2 {
   font-size: 2rem;
   font-family: "Roboto", sans-serif;
   color: brown;
@@ -21,7 +21,7 @@
   font-style: italic;
 }
 
-.about p {
+.about h2 {
   margin: 10px;
   font-style: italic;
   font-size: x-medium;
