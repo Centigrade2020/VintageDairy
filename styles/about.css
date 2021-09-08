@@ -1,7 +1,17 @@
 .aboutWrapper {
   width: 80%;
-  margin: 6vh auto;
+  margin: auto;
+  margin-bottom: 8vh;
   position: relative;
+  transform: translateX(-15px);
+  opacity: 0;
+  animation: cpAnim 1200ms forwards;
+}
+
+@keyframes aAnim {
+  100% {
+    transform: translate(0);
+  }
 }
 
 .aboutWrapperBlur {
