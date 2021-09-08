@@ -7,6 +7,12 @@ let products = "";
 let companyProfile = "";
 let contact = "";
 
+const hl = document.getElementById("h-link");
+const pl = document.getElementById("p-link");
+const cpl = document.getElementById("cp-link");
+const al = document.getElementById("a-link");
+const cl = document.getElementById("c-link");
+
 const loadPage = async (page) => {
   const response = await fetch(page);
   const resHtml = await response.text();
@@ -37,12 +43,10 @@ template("home", async () => {
   home = await loadPage("./pages/home.html");
   let myDiv = document.getElementById(appDiv);
   myDiv.innerHTML = home;
-  return myDiv;
-});
-template("about", async () => {
-  about = await loadPage("./pages/about.html");
-  let myDiv = document.getElementById(appDiv);
-  myDiv.innerHTML = about;
+  hl.classList.add("selectedNav");
+  pl.classList.remove("selectedNav");
+  cpl.classList.remove("selectedNav");
+  al.classList.remove("selectedNav");
   return myDiv;
 });
 
@@ -50,18 +54,41 @@ template("products", async () => {
   products = await loadPage("./pages/products.html");
   let myDiv = document.getElementById(appDiv);
   myDiv.innerHTML = products;
+  hl.classList.remove("selectedNav");
+  pl.classList.add("selectedNav");
+  cpl.classList.remove("selectedNav");
+  al.classList.remove("selectedNav");
   return myDiv;
 });
 template("company-profile", async () => {
   companyProfile = await loadPage("./pages/company-profile.html");
   let myDiv = document.getElementById(appDiv);
   myDiv.innerHTML = companyProfile;
+  hl.classList.remove("selectedNav");
+  pl.classList.remove("selectedNav");
+  cpl.classList.add("selectedNav");
+  al.classList.remove("selectedNav");
+  return myDiv;
+});
+
+template("about", async () => {
+  about = await loadPage("./pages/about.html");
+  let myDiv = document.getElementById(appDiv);
+  myDiv.innerHTML = about;
+  hl.classList.remove("selectedNav");
+  pl.classList.remove("selectedNav");
+  cpl.classList.remove("selectedNav");
+  al.classList.add("selectedNav");
   return myDiv;
 });
 template("contact", async () => {
   contact = await loadPage("./pages/contact.html");
   let myDiv = document.getElementById(appDiv);
   myDiv.innerHTML = contact;
+  hl.classList.remove("selectedNav");
+  pl.classList.remove("selectedNav");
+  cpl.classList.remove("selectedNav");
+  al.classList.remove("selectedNav");
   return myDiv;
 });
 

@@ -76,6 +76,35 @@ header ul {
 
 header ul a {
   text-decoration: none;
+  font-size: 1rem;
+  /* font-size: 1.4rem; */
+  position: relative;
+  padding-bottom: 8px;
+}
+
+header ul a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  top: 0;
+  left: 10%;
+  border-bottom: 2px solid var(--primary);
+  transition: width 300ms ease-in-out;
+}
+header ul li:hover a::after {
+  width: 80%;
+}
+
+header ul .selectedNav::after {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  top: 0;
+  left: 10%;
+  border-bottom: 2px solid var(--primary);
+  transition: width 300ms ease-in-out;
 }
 
 .logo img {
