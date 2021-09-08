@@ -168,8 +168,15 @@ section {
 
 /* ------------------------------------------------------------------- */
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
   .bgLayer {
     display: none;
+  }
+  :root {
+    --navbarHeight: 150px;
+    --footerHeight: 20vh;
+
+    --productWidth: 300px;
+    --productHeight: 600px;
   }
 }
