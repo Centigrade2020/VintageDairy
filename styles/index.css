@@ -9,9 +9,15 @@
   --primary0: #ffddb0;
   --primary: #c57000;
   --primary2: #fff5e9;
+  --primary3: #915200;
   --gray: #808080;
   --lightgray: #b4b4b4;
   --link: rgb(255, 0, 0);
+
+  --bg: #fdfdfd;
+  --highlight1: #ed4264;
+  --highlight2: #ffedbc;
+  --color: #1a1e24;
 
   --navbarHeight: 150px;
   --footerHeight: 20vh;
