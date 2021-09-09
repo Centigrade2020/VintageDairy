@@ -8,7 +8,7 @@
 }
 
 .homeContainer {
-  height: 75vh;
+  height: calc(100vh - var(--navbarHeight));
   width: 75%;
   margin: auto;
   display: flex;
@@ -190,4 +190,44 @@
 .homeContainer1 .hc1Card img {
   width: 300px;
   border-radius: 20px;
+}
+
+.homeContainer1 > h1 {
+  position: absolute;
+  top: 20%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+  color: var(--black);
+  font-size: 3rem;
+  transition: 300ms;
+}
+
+.homeContainer1 > h1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 2%;
+  height: 100%;
+  width: 60%;
+  border-bottom: 2px solid var(--primary);
+}
+
+.homeContainer1:hover > h1 {
+  opacity: 0;
+}
+
+.homeContainer1 .arrow {
+  position: absolute;
+  top: 60%;
+  right: 10%;
+  transform: translate(-50%, -50%);
+  transition: 300ms;
+}
+.homeContainer1 .arrow img {
+  width: 150px;
+  transform: rotate(190deg);
+}
+
+.homeContainer1:hover .arrow {
+  opacity: 0;
 }
