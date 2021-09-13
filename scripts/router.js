@@ -30,8 +30,12 @@ let template = (name, templateFunction) => {
 // will directly create the DOM objects.
 let route = (path, template) => {
   if (typeof template == "function") {
+    sidebar.style.transform = "translateY(-100%)";
+    sidebar.style.opacity = "0";
     return (routes[path] = template);
   } else if (typeof template == "string") {
+    sidebar.style.transform = "translateY(-100%)";
+    sidebar.style.opacity = "0";
     return (routes[path] = templates[template]);
   } else {
     return;
@@ -47,6 +51,8 @@ template("home", async () => {
   pl.classList.remove("selectedNav");
   cpl.classList.remove("selectedNav");
   al.classList.remove("selectedNav");
+  sidebar.style.transform = "translateY(-100%)";
+  sidebar.style.opacity = "0";
   return myDiv;
 });
 
@@ -58,6 +64,9 @@ template("products", async () => {
   pl.classList.add("selectedNav");
   cpl.classList.remove("selectedNav");
   al.classList.remove("selectedNav");
+
+  sidebar.style.transform = "translateY(-100%)";
+  sidebar.style.opacity = "0";
   return myDiv;
 });
 template("company-profile", async () => {
@@ -68,6 +77,9 @@ template("company-profile", async () => {
   pl.classList.remove("selectedNav");
   cpl.classList.add("selectedNav");
   al.classList.remove("selectedNav");
+
+  sidebar.style.transform = "translateY(-100%)";
+  sidebar.style.opacity = "0";
   return myDiv;
 });
 
@@ -79,6 +91,9 @@ template("about", async () => {
   pl.classList.remove("selectedNav");
   cpl.classList.remove("selectedNav");
   al.classList.add("selectedNav");
+
+  sidebar.style.transform = "translateY(-100%)";
+  sidebar.style.opacity = "0";
   return myDiv;
 });
 template("contact", async () => {
@@ -89,6 +104,9 @@ template("contact", async () => {
   pl.classList.remove("selectedNav");
   cpl.classList.remove("selectedNav");
   al.classList.remove("selectedNav");
+
+  sidebar.style.transform = "translateY(-100%)";
+  sidebar.style.opacity = "0";
   return myDiv;
 });
 
