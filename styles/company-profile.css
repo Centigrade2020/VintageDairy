@@ -187,7 +187,7 @@
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .companyProfile {
     flex-direction: column;
     align-items: center;
