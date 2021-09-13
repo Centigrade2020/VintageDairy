@@ -35,7 +35,23 @@
           </div>
           <a href="#/contact" class="defaultLink" id="c-link">Contact us</a>
         </div>
+        <div class="burger" id="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
       </header>
+      <aside class="navSideBar" id="sidebar">
+        <div class="cross" id="burger2">
+          <img src="./assets/svgs/cross.svg" alt="" />
+        </div>
+        <ul>
+          <li><a href="#/" id="h-link">Home</a></li>
+          <li><a href="#/products" id="p-link">Products</a></li>
+          <li><a href="#/company-profile" id="cp-link">Company Profile</a></li>
+          <li><a href="#/about" id="a-link">About</a></li>
+        </ul>
+      </aside>
     </main>
     <div id="root"></div>
     <footer>Footer</footer>
@@ -65,13 +81,23 @@
 
     <script src="./scripts/router.js"></script>
     <script src="./scripts/index.js"></script>
+    <script>
+      const burger = document.getElementById("burger");
+      const burger2 = document.getElementById("burger2");
+      const sidebar = document.getElementById("sidebar");
+      burger.addEventListener("click", () => {
+        sidebar.style.transform = "translateY(0)";
+        sidebar.style.opacity = "1";
+      });
+      burger2.addEventListener("click", () => {
+        sidebar.style.transform = "translateY(-100%)";
+        sidebar.style.opacity = "0";
+      });
+    </script>
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
     ></script>
     <script src="./scripts/contact.js"></script>
-    <script>
-      // console.log(document.getElementById("galleryWrapper"));
-    </script>
   </body>
 </html>

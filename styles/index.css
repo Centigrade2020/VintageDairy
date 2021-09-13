@@ -38,6 +38,7 @@ body {
   width: 100%;
   min-height: 100vh;
   position: relative;
+  overflow-x: hidden;
 }
 
 header {
@@ -48,6 +49,29 @@ header {
   gap: 3%;
   padding: 0 10%;
   user-select: none;
+}
+.navSideBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  z-index: 9999;
+  color: white;
+  align-items: center;
+  justify-content: space-evenly;
+  display: none;
+  transform: translateY(-100%);
+  opacity: 0;
+  transition: 300ms ease-in-out;
+}
+
+.navSideBar ul li a {
+  text-decoration: none;
+  color: white;
 }
 .contactContainer {
   position: absolute;
@@ -195,12 +219,57 @@ section {
   left: -5%;
 }
 
+.burger {
+  cursor: pointer;
+  display: none;
+}
+
+.burger .line1,
+.burger .line2,
+.burger .line3 {
+  width: 30px;
+  height: 4px;
+  background-color: var(--primary3);
+  border-radius: 2px;
+  margin: 4px;
+  /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid black;
+  border-right: 1px solid black; */
+}
+
+.cross {
+  position: fixed;
+  top: 5vh;
+  right: 5vh;
+  transform: translate(-50%, -50%);
+}
+
 /* ------------------------------------------------------------------- */
 
+@media screen and (max-width: 1170px) {
+  .navSideBar {
+    display: flex;
+  }
+  .burger {
+    display: inline;
+  }
+  header ul {
+    display: none;
+  }
+  .contactContainer {
+    display: none;
+  }
+  .headerDesktop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
 @media screen and (max-width: 600px) {
   .bgLayer {
     display: none;
   }
+
   :root {
     --navbarHeight: 150px;
     --footerHeight: 20vh;
@@ -209,3 +278,5 @@ section {
     --productHeight: 600px;
   }
 }
+
+/* ------------- */
