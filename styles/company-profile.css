@@ -194,7 +194,7 @@
   }
 
   .timeline {
-    min-width: 300px;
+    min-width: 400px;
   }
 
   /* Place the timelime to the left */
@@ -207,7 +207,7 @@
     left: 1px;
   }
   .timeline .right {
-    right: 10px;
+    right: 100px;
   }
 
   /* Full-width containers */
@@ -249,7 +249,7 @@
     font-size: 0.9rem;
   }
   .certificateContainer {
-    width: 90%;
+    width: 80%;
   }
   .certificateContainer img {
     width: 100%;

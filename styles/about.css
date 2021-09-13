@@ -110,3 +110,46 @@
   position: absolute;
   z-index: 2;
 }
+
+/* ------------------------------------------------------------------- */
+
+@media screen and (max-width: 1170px) {
+  .ac2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .ac2 .right .imgContainer {
+    width: 100%;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  .ac2 .right .imgContainer img {
+    height: 100%;
+  }
+  .ac2 .left {
+    width: calc(100%);
+    padding-right: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .ac2 .right .imgContainer {
+    width: 100%;
+    height: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  .aboutContent h1 {
+    color: var(--primary3);
+    font-size: 2rem;
+  }
+
+  .aboutContent p {
+    text-align: justify;
+    padding-top: 10px;
+    font-size: 0.8rem;
+  }
+}
+
+/* ------------- */
