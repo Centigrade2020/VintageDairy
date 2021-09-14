@@ -8,36 +8,39 @@
 }
 
 .homeContainer {
-  height: calc(100vh - var(--navbarHeight));
-  width: 75%;
+  /* height: calc(100vh - var(--navbarHeight)); */
+  width: 80%;
   margin: auto;
-  display: flex;
+  /* display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
 }
 
 .homeWrapper,
 .homeGallery {
-  height: 100%;
-  width: 50%;
-  transform: translateY(-5vh);
+  /* height: 100%; */
+  /* width: 50%; */
+  /* transform: translateY(-5vh); */
 }
 
 .homeWrapper {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  margin-bottom: 10vh;
 }
 
 .homeWrapper h1 {
   font-size: 3rem;
   font-family: "Roboto", sans-serif;
+  margin-bottom: 5vh;
 }
 
 .homeWrapper > p {
   font-style: italic;
-  width: 80%;
-  transform: translatey(-5vh);
+  width: 50%;
+  /* transform: translatey(-5vh); */
+  margin-bottom: 5vh;
 }
 .homeWrapper > p > span {
   font-weight: bold;
@@ -45,7 +48,7 @@
 .homeWrapper > .homeButtonsContainer {
   display: flex;
   gap: 30px;
-  transform: translatey(-10vh);
+  /* transform: translatey(-10vh); */
 }
 /* .home > .homeWrapper {
   width: 100%;
@@ -78,13 +81,14 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  margin-top: 3vh;
+  margin-bottom: 15vh;
 }
 
 .homeGallery .imgContainer {
-  min-width: 450px;
-  min-height: 450px;
-  max-width: 450px;
-  max-height: 450px;
+  width: 100%;
+  /* min-height: 30vh; */
+  max-height: 68vh;
   overflow: hidden;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
   overflow: hidden;
@@ -92,8 +96,7 @@
 }
 
 .homeGallery .imgContainer img {
-  max-height: 450px;
-  min-height: 450px;
+  min-width: 100%;
 }
 
 .galleryWrapper {
@@ -141,11 +144,12 @@
 
 .homeContainer1 {
   height: 70vh;
-  width: 100%;
+  width: 80%;
+  margin: 0 auto;
   position: relative;
   /* background-color: var(--primary2); */
   padding: 10vh;
-  transform: translateY(-10vh);
+  /* transform: translateY(-10vh); */
 }
 
 .homeContainer1 .hc1Card {
@@ -181,7 +185,7 @@
   opacity: 1;
 }
 .homeContainer1:hover .hc1Card {
-  left: calc(50% + (var(--i) * 25%));
+  left: calc(50% + (var(--i) * 35%));
   top: 50%;
   transform: translate(-50%, -50%) rotate(0deg) skew(0, 0);
   opacity: 1;
@@ -194,9 +198,8 @@
 
 .homeContainer1 > h1 {
   position: absolute;
-  top: 20%;
-  left: 15%;
-  transform: translate(-50%, -50%);
+  top: 0;
+  left: 0%;
   color: var(--black);
   font-size: 3rem;
   transition: 300ms;
@@ -218,9 +221,9 @@
 
 .homeContainer1 .arrow {
   position: absolute;
-  top: 60%;
-  right: 10%;
-  transform: translate(-50%, -50%);
+  bottom: 0%;
+  right: 00%;
+  transform: translateY(-50%);
   transition: 300ms;
 }
 .homeContainer1 .arrow img {
