@@ -3,7 +3,6 @@
     <form id="myform">
       <p>Enquiry</p>
       <input type="text" id="name" placeholder="Name" required />
-      <input type="email" id="email" placeholder="Email" required />
       <input
         type="tel"
         id="phone"
@@ -11,6 +10,16 @@
         placeholder="Phone number"
         required
       />
+      <input type="text" id="quantity" placeholder="Quantity" required />
+      <input type="email" id="email" placeholder="Email" required />
+      <textarea
+        name="Description"
+        id="description"
+        cols="30"
+        rows="10"
+        placeholder="Description (optional)"
+      ></textarea>
+
       <button onclick="sendMail()">
         <span>Send inquiry </span>
       </button>

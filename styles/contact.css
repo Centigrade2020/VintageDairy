@@ -16,7 +16,7 @@
 .contact form,
 .contact .contactDetails {
   width: 50%;
-  height: 400px;
+  height: 600px;
   background-color: white;
   padding: 30px;
 }
@@ -66,6 +66,15 @@
   margin: 10px auto;
   border: none;
   outline: none;
+}
+
+.contact form textarea {
+  width: 85%;
+  padding: 15px;
+  margin: 10px auto;
+  border: none;
+  outline: none;
+  resize: none;
 }
 
 .cRow {
