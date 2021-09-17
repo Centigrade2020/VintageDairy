@@ -28,8 +28,9 @@
   flex-direction: column;
   justify-content: space-evenly;
   margin-bottom: 10vh;
-  width: 80%;
+  width: 100%;
   margin: 10vh auto;
+  margin-left: 10%;
 }
 
 .homeWrapper h1 {
@@ -52,39 +53,14 @@
   gap: 30px;
   /* transform: translatey(-10vh); */
 }
-/* .home > .homeWrapper {
-  width: 100%;
-  height: fit-content;
-  border: 1px solid red;
-  position: relative;
-}
-
-.home > .homeWrapper > h1 {
-  font-size: 3rem;
-  margin: 5vh 0;
-  font-family: "Roboto", sans-serif;
-}
-
-.home > .homeWrapper > p {
-  margin-bottom: 3vh;
-  font-style: italic;
-  width: 40%;
-}
-.home > .homeWrapper > p > span {
-  font-weight: bold;
-}
-
-.home > .homeWrapper > .homeButtonsContainer {
-  display: flex;
-  gap: 30px;
-} */
 
 .homeGallery {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   height: calc(100vh - var(--navbarHeight));
-  background-color: red;
+  background-color:var(--primary2);
+  backdrop-filter: blur(10px);
   overflow: hidden;
 }
 
