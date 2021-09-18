@@ -159,13 +159,64 @@ header ul .selectedNav::after {
 /* ----------- */
 
 footer {
-  height: var(--footerHeight);
+  /* height: var(--footerHeight); */
   background-color: black;
+
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  position: relative;
+}
+
+.footer1 {
+  width: 100%;
   color: var(--white);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 30px;
+}
+
+footer .logoContainer img {
+  width: 200px;
+}
+
+footer .footerContact * {
+  color: white;
+}
+
+footer h2 {
+  position: relative;
+  width: fit-content;
+  margin-bottom: 30px;
+  color: white;
+}
+
+footer h2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 10%;
+  width: 80%;
+  height: 100%;
+  border-bottom: 1px solid white;
+}
+
+footer .footerContact p {
+  width: 100%;
+  color: var(--gray);
+  padding-bottom: 10px;
+}
+.copyrights {
+  width: 100%;
+  background-color: var(--black);
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
+  padding: 20px;
+}
+
+.copyrights p {
+  color: white;
 }
 
 #root {
