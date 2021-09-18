@@ -34,8 +34,8 @@ let route = (path, template) => {
     sidebar.style.opacity = "0";
     return (routes[path] = template);
   } else if (typeof template == "string") {
-    sidebar.style.transform = "translateY(-100%)";
-    sidebar.style.opacity = "0";
+    // sidebar.style.transform = "translateY(-100%)";
+    // sidebar.style.opacity = "0";
     return (routes[path] = templates[template]);
   } else {
     return;
