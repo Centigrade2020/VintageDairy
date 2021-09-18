@@ -1,11 +1,11 @@
-.home {
-  /* height: 75vh;
+/* .home {
+  height: 75vh;
   width: 75%;
   margin: auto;
   display: flex;
   align-items: center;
-  justify-content: center; */
-}
+  justify-content: center;
+} */
 
 .homeContainer {
   /* height: calc(100vh - var(--navbarHeight)); */
@@ -16,12 +16,12 @@
   justify-content: center; */
 }
 
-.homeWrapper,
+/* .homeWrapper,
 .homeGallery {
-  /* height: 100%; */
-  /* width: 50%; */
-  /* transform: translateY(-5vh); */
-}
+  height: 100%;
+  width: 50%;
+  transform: translateY(-5vh);
+} */
 
 .homeWrapper {
   display: flex;
