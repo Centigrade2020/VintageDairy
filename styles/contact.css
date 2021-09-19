@@ -33,21 +33,25 @@
 .contact .contactDetails h1::after {
   content: "";
   position: absolute;
+  width: 80%;
+  height: 100%;
   top: 0;
   left: 10%;
-  width: 80%;
-  height: 110%;
   border-bottom: 2px solid var(--primary);
+  
 }
 
 .contact .contactDetails .contactContent {
   width: 100%;
-  height: 50%;
+  height: 60%;
   padding-top: 120px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
+/* .contactDetails iframe{
+  height: 200px;
+} */
 .contact form {
   background-color: var(--primary0);
   display: flex;
@@ -79,6 +83,7 @@
 .contact form textarea {
   width: 85%;
   padding: 15px;
+  height: 40%;
   margin: 10px auto;
   border: none;
   outline: none;
