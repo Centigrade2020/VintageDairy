@@ -197,7 +197,6 @@ footer h2 {
   font-weight: 500;
   color: white;
   padding-bottom: 2px;
-  
 }
 
 footer h2::after {
@@ -208,7 +207,6 @@ footer h2::after {
   top: 0;
   left: 10%;
   border-bottom: 1px solid var(--primary2);
-  
 }
 footer h2:hover h2::after {
   width: 80%;
@@ -224,7 +222,7 @@ footer .footerLinks p a {
   text-decoration: none;
   transition: color 200ms ease-in-out;
 }
-footer .footerLinks p:hover a {
+footer .footerLinks p a:hover {
   color: var(--primary0);
 }
 
@@ -265,6 +263,27 @@ section {
   width: 100%;
   min-height: calc(100vh - var(--footerHeight) - var(--navbarHeight));
   position: relative;
+}
+
+.footerSocial a {
+  color: var(--gray);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  place-self: left;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.footerSocial a p {
+  color: var(--gray);
+  transition: color 200ms ease-in-out;
+}
+.footerSocial a:hover p {
+  color: var(--primary0);
+}
+.footerSocial a img {
+  width: 25px;
 }
 
 /* ------------------------------------------------------------------- */
@@ -348,10 +367,9 @@ section {
   transform: translate(-50%, -50%);
   cursor: pointer;
 }
-footer .footerSocial img{
+footer .footerSocial img {
   font-size: 10px;
   color: #ffffff;
-  
 }
 
 /* ------------------------------------------------------------------- */
