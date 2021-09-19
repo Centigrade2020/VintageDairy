@@ -206,7 +206,7 @@ footer h2::after {
   left: 10%;
   width: 80%;
   height: 100%;
-  border-bottom: 1px solid var(--primary2);
+  border-bottom: 1px solid var(--primary0);
 }
 
 footer .footerContact p,

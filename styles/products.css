@@ -104,6 +104,7 @@
   .wrapper {
     flex-direction: column;
     width: 90%;
+    margin: 0 0 50px 0;
   }
   .product-img,
   .product-info {
