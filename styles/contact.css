@@ -72,6 +72,14 @@
   outline: none;
 }
 
+.contact form button {
+  border: 1px solid var(--primary);
+  background-color: var(--primary);
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
 .contact form textarea {
   width: 85%;
   padding: 15px;
@@ -118,9 +126,18 @@
     justify-content: space-evenly;
     padding-top: 90px;
   }
+  .contact form input,
+  .contact form button,
+  .contact form textarea {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 700px) {
   .contactWrapper {
     width: 80%;
+  }
+  .cRow p {
+    font-size: 0.8rem;
+    padding-left: 10px;
   }
 }

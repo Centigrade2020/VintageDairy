@@ -42,6 +42,12 @@ let route = (path, template) => {
   }
 };
 
+function setDefaults() {
+  sidebar.style.transform = "translateY(-100%)";
+  sidebar.style.opacity = "0";
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
 // Register the templates.
 template("home", async () => {
   home = await loadPage("./pages/home.html");
@@ -51,8 +57,9 @@ template("home", async () => {
   pl.classList.remove("selectedNav");
   cpl.classList.remove("selectedNav");
   al.classList.remove("selectedNav");
-  sidebar.style.transform = "translateY(-100%)";
-  sidebar.style.opacity = "0";
+
+  setDefaults();
+
   return myDiv;
 });
 
@@ -65,8 +72,8 @@ template("products", async () => {
   cpl.classList.remove("selectedNav");
   al.classList.remove("selectedNav");
 
-  sidebar.style.transform = "translateY(-100%)";
-  sidebar.style.opacity = "0";
+  setDefaults();
+
   return myDiv;
 });
 template("company-profile", async () => {
@@ -78,8 +85,8 @@ template("company-profile", async () => {
   cpl.classList.add("selectedNav");
   al.classList.remove("selectedNav");
 
-  sidebar.style.transform = "translateY(-100%)";
-  sidebar.style.opacity = "0";
+  setDefaults();
+
   return myDiv;
 });
 
@@ -92,8 +99,8 @@ template("about", async () => {
   cpl.classList.remove("selectedNav");
   al.classList.add("selectedNav");
 
-  sidebar.style.transform = "translateY(-100%)";
-  sidebar.style.opacity = "0";
+  setDefaults();
+
   return myDiv;
 });
 template("contact", async () => {
@@ -105,8 +112,8 @@ template("contact", async () => {
   cpl.classList.remove("selectedNav");
   al.classList.remove("selectedNav");
 
-  sidebar.style.transform = "translateY(-100%)";
-  sidebar.style.opacity = "0";
+  setDefaults();
+
   return myDiv;
 });
 

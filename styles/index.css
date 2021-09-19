@@ -48,7 +48,6 @@ header {
   align-items: center;
   gap: 3%;
   padding: 0 10%;
-  user-select: none;
 }
 .navSideBar {
   position: fixed;
@@ -382,7 +381,7 @@ footer .footerSocial img{
   }
 
   :root {
-    --navbarHeight: 150px;
+    --navbarHeight: 120px;
     --footerHeight: 20vh;
 
     --productWidth: 300px;
@@ -401,6 +400,34 @@ footer .footerSocial img{
   .footerSocial {
     margin-bottom: 10vh;
     width: 100%;
+  }
+  .logo img {
+    width: 120px;
+  }
+  .defaultLink {
+    padding: 8px 12px;
+    background-color: var(--primary);
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: box-shadow 200ms ease-in-out;
+  }
+
+  .defaultLink2 {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    background-color: var(--white);
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    border: 1px solid var(--gray);
+    color: var(--black);
+    transition: box-shadow 200ms ease-in-out;
   }
 }
 
