@@ -193,22 +193,27 @@ footer .footerContact * {
 
 footer h2 {
   position: relative;
-  width: fit-content;
+  width: max-content;
   margin-bottom: 30px;
   font-weight: 500;
   color: white;
+  padding-bottom: 2px;
+  
 }
 
 footer h2::after {
   content: "";
   position: absolute;
-  top: 0;
-  left: 10%;
   width: 80%;
   height: 100%;
+  top: 0;
+  left: 10%;
   border-bottom: 1px solid var(--primary2);
+  
 }
-
+footer h2:hover h2::after {
+  width: 80%;
+}
 footer .footerContact p,
 footer .footerLinks p,
 footer .footerLinks p a {
@@ -343,6 +348,11 @@ section {
   right: 10vh;
   transform: translate(-50%, -50%);
   cursor: pointer;
+}
+footer .footerSocial img{
+  font-size: 10px;
+  color: #ffffff;
+  
 }
 
 /* ------------------------------------------------------------------- */
