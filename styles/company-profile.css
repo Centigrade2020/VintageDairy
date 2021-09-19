@@ -74,7 +74,6 @@
   left: calc(50% + 5px);
 }
 
-
 /* Fix the circle for containers on the right side */
 .timeline .right::after {
   left: -16px;

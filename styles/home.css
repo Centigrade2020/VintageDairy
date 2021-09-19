@@ -78,28 +78,22 @@
 .galleryWrapper {
   transform: translateX(0);
   display: flex;
-  animation: hGallery 10s infinite;
+  animation: hGallery 8s infinite;
   animation-delay: 3.5s;
 }
 
 @keyframes hGallery {
-  16.5% {
+  25% {
     transform: translateX(-100%);
   }
-  33% {
+  50% {
     transform: translateX(-100%);
   }
-  49.5% {
+  75% {
     transform: translateX(-200%);
-  }
-  66% {
-    transform: translateX(-200%);
-  }
-  82.5% {
-    transform: translateX(-300%);
   }
   100% {
-    transform: translateX(-300%);
+    transform: translateX(-200%);
   }
 }
 
@@ -209,4 +203,124 @@
 
 .homeContainer1:hover .arrow {
   opacity: 0;
+}
+
+.mobileHidden {
+  display: none;
+}
+
+@media screen and (max-width: 1170px) {
+  .homeContainer1 .hc1Card {
+    position: absolute;
+    top: calc(50% - 100px);
+    left: 50%;
+    transform: translate(-50%, calc(60px * var(--i))) rotate(40deg)
+      skew(-20deg, -10deg) scale(0.8);
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255, 201, 100);
+    /* background-color: white; */
+    box-shadow: 25px 25px 100px rgba(0, 0, 0, 0.2);
+    z-index: calc((-1 * var(--i)) + 1);
+    transition: 0.5s;
+    opacity: calc(0.5 - (var(--i) * 0.2));
+    border-radius: 20px;
+  }
+  .homeContainer1 .hc1Card img {
+    width: 200px;
+    border-radius: 20px;
+  }
+  .homeContainer1 .hc1Card .imgContainer h1 {
+    position: absolute;
+    font-size: 1.5rem;
+    font-weight: 600;
+    transform: translateY(-7vh);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .homeWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 10vh;
+    width: 100%;
+    margin: 10vh auto;
+    /* background-color: red; */
+  }
+  .homeWrapper p {
+    width: 60%;
+  }
+
+  .desktopHidden {
+    display: none;
+  }
+  .mobileHidden {
+    display: flex;
+    flex-direction: column;
+  }
+  .homeContainer2 {
+    position: relative;
+    width: 90%;
+    margin: auto;
+  }
+  .homeContainer2 .imgContainer {
+    width: 300px;
+    height: 300px;
+    /* overflow: hidden; */
+    position: relative;
+    margin-bottom: 10vh;
+  }
+  .homeContainer2 .imgContainer:nth-child(2) {
+    align-self: flex-end;
+  }
+  .homeContainer2 .imgContainer h1 {
+    position: absolute;
+    /* top: 15%; */
+    bottom: 15%;
+    right: -15%;
+    background-color: white;
+    padding: 15px 30px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+    font-size: 1.2rem;
+    font-weight: 600;
+    width: fit-content;
+  }
+  .homeContainer2 .imgContainer:nth-child(2) h1 {
+    align-self: flex-end;
+    left: -25%;
+    box-shadow: -5px 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  .homeContainer2 > h1 {
+    position: absolute;
+    top: 0;
+    left: 5%;
+    color: var(--black);
+    font-size: 3rem;
+    transition: 300ms;
+  }
+
+  .homeContainer2 > h1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 2%;
+    height: 100%;
+    width: 60%;
+    border-bottom: 2px solid var(--primary);
+  }
+
+  .homeContainer2 .imgContainer img {
+    width: inherit;
+    border-radius: 20px;
+  }
+
+  .hc2Wrap {
+    width: 80%;
+    margin: 20vh auto 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
 }
