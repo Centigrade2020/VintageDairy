@@ -15,7 +15,10 @@ function sendMail(){
     const contactParams = {
       from_name: name,
       from_email: email,
-      messages: "test",
+      from_phonenumber:phonenumber,
+      from_quantity:quantity,
+      from_description:description,
+      from_message: "test",
     };
     emailjs
       .send("service_qi07cwl", "template_clfjccd", contactParams)
