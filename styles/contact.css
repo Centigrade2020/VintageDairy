@@ -113,9 +113,18 @@
     justify-content: space-evenly;
     padding-top: 90px;
   }
+  .contact form input,
+  .contact form button,
+  .contact form textarea {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 700px) {
   .contactWrapper {
     width: 80%;
+  }
+  .cRow p {
+    font-size: 0.8rem;
+    padding-left: 10px;
   }
 }

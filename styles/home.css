@@ -246,8 +246,13 @@
     align-items: center;
     margin-bottom: 10vh;
     width: 100%;
-    margin: 10vh auto;
+    margin: 5vh auto;
     /* background-color: red; */
+  }
+  .homeWrapper h1 {
+    font-size: 2rem;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 5vh;
   }
   .homeWrapper p {
     width: 60%;
@@ -266,8 +271,8 @@
     margin: auto;
   }
   .homeContainer2 .imgContainer {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     /* overflow: hidden; */
     position: relative;
     margin-bottom: 10vh;
@@ -281,10 +286,10 @@
     bottom: 15%;
     right: -15%;
     background-color: white;
-    padding: 15px 30px;
+    padding: 10px 20px;
     border-radius: 10px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     font-weight: 600;
     width: fit-content;
   }
@@ -298,7 +303,7 @@
     top: 0;
     left: 5%;
     color: var(--black);
-    font-size: 2.5rem;
+    font-size: 2rem;
     transition: 300ms;
   }
 
@@ -319,12 +324,8 @@
 
   .hc2Wrap {
     width: 80%;
-    margin: 20vh auto 0 auto;
+    margin: 12vh auto 0 auto;
     display: flex;
     flex-direction: column;
-  }
-
-  .homeWrapper h1 {
-    font-size: 2.5rem;
   }
 }
