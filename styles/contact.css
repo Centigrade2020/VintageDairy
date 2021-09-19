@@ -82,6 +82,15 @@
   grid-template-columns: 1fr 9fr;
   padding-bottom: 10px;
 }
+
+.contact > p {
+  width: 70%;
+  margin: 10vh auto;
+  text-align: center;
+  font-size: 1.1rem;
+  font-style: italic;
+}
+
 @media screen and (max-width: 1170px) {
   .contactWrapper {
     flex-direction: column;
