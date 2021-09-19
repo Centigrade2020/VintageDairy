@@ -68,6 +68,14 @@
   outline: none;
 }
 
+.contact form button {
+  border: 1px solid var(--primary);
+  background-color: var(--primary);
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
 .contact form textarea {
   width: 85%;
   padding: 15px;
