@@ -184,7 +184,9 @@ footer .logoContainer {
 footer .logoContainer img {
   width: 200px;
 }
-
+footer .footerContact {
+  width: 90%;
+}
 footer .footerContact * {
   color: white;
 }
@@ -193,6 +195,7 @@ footer h2 {
   position: relative;
   width: fit-content;
   margin-bottom: 30px;
+  font-weight: 500;
   color: white;
 }
 
@@ -206,11 +209,21 @@ footer h2::after {
   border-bottom: 1px solid var(--primary2);
 }
 
-footer .footerContact p {
+footer .footerContact p,
+footer .footerLinks p,
+footer .footerLinks p a {
   width: 100%;
   color: var(--gray);
   padding-bottom: 10px;
 }
+footer .footerLinks p a {
+  text-decoration: none;
+  transition: color 200ms ease-in-out;
+}
+footer .footerLinks p:hover a {
+  color: var(--primary0);
+}
+
 footer .copyrights {
   width: 100%;
   background-color: var(--black);
@@ -226,17 +239,18 @@ footer .copyrights a {
   transition: color 200ms ease-in-out;
 }
 
-footer .copyrights:hover a {
-}
-
 footer .copyrights p {
-  color: white;
+  color: var(--lightgray);
 }
 
-footer .copyrights p span {
+footer .copyrights p .marginSpan {
   color: var(--gray);
   margin: 0 10px;
   font-size: large;
+}
+
+footer .copyrights p .colorSpan {
+  color: var(--primary0);
 }
 
 #root {
@@ -363,6 +377,20 @@ section {
 
     --productWidth: 300px;
     --productHeight: 600px;
+  }
+
+  .footerContent {
+    width: 80%;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+  .footerContact,
+  .footerLinks,
+  .footerSocial {
+    margin-bottom: 10vh;
+    width: 100%;
   }
 }
 
