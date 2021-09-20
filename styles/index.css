@@ -147,6 +147,7 @@ header ul .selectedNav::after {
 
 .logo img {
   width: 150px;
+  height: 150px;
 }
 
 /* ----------- */
@@ -182,6 +183,7 @@ footer .logoContainer {
 
 footer .logoContainer img {
   width: 200px;
+  height: 200px;
 }
 footer .footerContact {
   width: 90%;
@@ -362,8 +364,8 @@ section {
 
 .cross {
   position: fixed;
-  top: 10vh;
-  right: 10vh;
+  top: 7vh;
+  right: 2.5vh;
   transform: translate(-50%, -50%);
   cursor: pointer;
 }
@@ -421,6 +423,7 @@ footer .footerSocial img {
   }
   .logo img {
     width: 120px;
+    height: 120px;
   }
   .defaultLink {
     padding: 8px 12px;

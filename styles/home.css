@@ -228,6 +228,7 @@
   }
   .homeContainer1 .hc1Card img {
     width: 200px;
+    
     border-radius: 20px;
   }
   .homeContainer1 .hc1Card .imgContainer h1 {
@@ -320,6 +321,7 @@
   .homeContainer2 .imgContainer img {
     width: inherit;
     border-radius: 20px;
+    
   }
 
   .hc2Wrap {
