@@ -58,7 +58,7 @@ template("home", async () => {
   cpl.classList.remove("selectedNav");
   al.classList.remove("selectedNav");
 
-  setDefaults();
+  // setDefaults();
 
   return myDiv;
 });
@@ -72,7 +72,7 @@ template("products", async () => {
   cpl.classList.remove("selectedNav");
   al.classList.remove("selectedNav");
 
-  setDefaults();
+  // setDefaults();
 
   return myDiv;
 });
@@ -85,7 +85,7 @@ template("company-profile", async () => {
   cpl.classList.add("selectedNav");
   al.classList.remove("selectedNav");
 
-  setDefaults();
+  // setDefaults();
 
   return myDiv;
 });
@@ -99,7 +99,7 @@ template("about", async () => {
   cpl.classList.remove("selectedNav");
   al.classList.add("selectedNav");
 
-  setDefaults();
+  // setDefaults();
 
   return myDiv;
 });
@@ -112,7 +112,7 @@ template("contact", async () => {
   cpl.classList.remove("selectedNav");
   al.classList.remove("selectedNav");
 
-  setDefaults();
+  // setDefaults();
 
   return myDiv;
 });

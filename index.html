@@ -20,9 +20,12 @@
       href="assets/images/favicon.ico"
       type="image/x-icon"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./styles/index.css" />
     <link rel="stylesheet" href="./styles/about.css" />
     <title>Vintage Dairy - Purity in every drop</title>
@@ -47,24 +50,21 @@
           </div>
           <a href="#/contact" class="defaultLink" id="c-link">Contact us</a>
         </div>
-        <div class="burger" id="burger">
+      </header>
+      <div class="menuBar">
+        <h1>Menu</h1>
+        <div class="burger">
           <div class="line1"></div>
           <div class="line2"></div>
           <div class="line3"></div>
         </div>
-      </header>
-      <aside class="navSideBar" id="sidebar">
-        <div class="cross" id="burger2">
-          <img src="./assets/svgs/cross.svg" alt="" />
-        </div>
-        <ul>
-          <li><a href="#/" id="h-link">Home</a></li>
-          <li><a href="#/products" id="p-link">Products</a></li>
-          <li><a href="#/company-profile" id="cp-link">Company Profile</a></li>
-          <li><a href="#/about" id="a-link">About</a></li>
-          <li><a href="#/contact" id="c-link">Contact us</a></li>
-        </ul>
-      </aside>
+      </div>
+      <div class="menuContent">
+        <a href="#/" id="h-link">Home</a>
+        <a href="#/products" id="p-link">Products</a>
+        <a href="#/company-profile" id="cp-link">Company Profile</a>
+        <a href="#/about" id="a-link">About</a>
+      </div>
     </main>
     <div id="root"></div>
     <footer>
@@ -74,19 +74,22 @@
         </div>
         <div class="footerContact">
           <h2>Contact</h2>
-         
+
           <p>Mr Nataraj (Proprietor)</p>
           <p>09791226922</p>
-          <a href="https://goo.gl/maps/QJ8LwMJdpLBW7g377" style="text-decoration: none;">
-          <p>
-            B No. 15w-6/23 <br />
-            Kandiyamman Kovil Street, <br />
-            Meenatchipuram, <br />
-            Bodinayakanur,<br />
-            Theni - 625582,<br />
-            Tamil Nadu, India
-          </p>
-        </a>
+          <a
+            href="https://goo.gl/maps/QJ8LwMJdpLBW7g377"
+            style="text-decoration: none"
+          >
+            <p>
+              B No. 15w-6/23 <br />
+              Kandiyamman Kovil Street, <br />
+              Meenatchipuram, <br />
+              Bodinayakanur,<br />
+              Theni - 625582,<br />
+              Tamil Nadu, India
+            </p>
+          </a>
         </div>
         <div class="footerLinks">
           <h2>Menu</h2>
@@ -128,24 +131,13 @@
     <script src="./scripts/router.js"></script>
     <script src="./scripts/index.js"></script>
     <script>
-      const burger = document.getElementById("burger");
-      const burger2 = document.getElementById("burger2");
-      const sidebar = document.getElementById("sidebar");
-      burger.addEventListener("click", () => {
-        sidebar.style.transform = "translateY(0)";
-        sidebar.style.opacity = "1";
-      });
-      burger2.addEventListener("click", () => {
-        sidebar.style.transform = "translateY(-100%)";
-        sidebar.style.opacity = "0";
-      });
+      //  --------------------
+      //  --------------------
     </script>
     <script
       type="text/javascript"
       defer
       src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
-      
-
     ></script>
     <script src="./scripts/contact.js"></script>
     <!--   
