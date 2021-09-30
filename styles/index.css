@@ -226,10 +226,6 @@ footer .footerLinks p {
 }
 footer .footerLinks p a {
   text-decoration: none;
-  background-color: var(--primary3);
-  color: white;
-  padding: 8px 12px;
-  border-radius: 5px;
   transition: color 200ms ease-in-out;
 }
 footer .footerLinks p a:hover {
@@ -516,6 +512,14 @@ footer .footerSocial img {
     border: 1px solid var(--gray);
     color: var(--black);
     transition: box-shadow 200ms ease-in-out;
+  }
+  footer .footerLinks p a {
+    text-decoration: none;
+    background-color: var(--primary3);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: color 200ms ease-in-out;
   }
 }
 
