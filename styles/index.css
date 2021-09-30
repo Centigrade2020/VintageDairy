@@ -381,7 +381,7 @@ footer .footerSocial img {
   background-color: var(--primary);
   position: relative;
   z-index: 2;
-  width: 80%;
+  width: 90%;
   padding: 10px 20px;
   margin: 20px auto;
   display: none;
@@ -397,7 +397,7 @@ footer .footerSocial img {
 }
 
 .menuContent {
-  width: 80%;
+  width: 90%;
   margin: auto;
   margin-bottom: 20px;
   background-color: var(--primary2);
@@ -455,10 +455,16 @@ footer .footerSocial img {
   .menuContent {
     display: flex;
   }
+  .menuActive {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 700px) {
   .bgLayer {
+    display: none;
+  }
+  .menuActive {
     display: none;
   }
 

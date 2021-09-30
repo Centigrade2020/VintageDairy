@@ -51,7 +51,7 @@
           <a href="#/contact" class="defaultLink" id="c-link">Contact us</a>
         </div>
       </header>
-      <div class="menuBar">
+      <div class="menuBar" id="menuBar">
         <h1>Menu</h1>
         <div class="burger">
           <div class="line1"></div>
@@ -59,7 +59,7 @@
           <div class="line3"></div>
         </div>
       </div>
-      <div class="menuContent">
+      <div class="menuContent" id="menuContent">
         <a href="#/" id="h-link">Home</a>
         <a href="#/products" id="p-link">Products</a>
         <a href="#/company-profile" id="cp-link">Company Profile</a>
@@ -131,8 +131,12 @@
     <script src="./scripts/router.js"></script>
     <script src="./scripts/index.js"></script>
     <script>
-      //  --------------------
-      //  --------------------
+      const menuBar = document.getElementById("menuBar");
+      const menuContent = document.getElementById("menuContent");
+
+      menuBar.addEventListener("click", () => {
+        menuContent.classList.toggle("menuActive");
+      });
     </script>
     <script
       type="text/javascript"

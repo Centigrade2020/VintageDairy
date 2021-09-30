@@ -43,8 +43,7 @@ let route = (path, template) => {
 };
 
 function setDefaults() {
-  sidebar.style.transform = "translateY(-100%)";
-  sidebar.style.opacity = "0";
+  menuContent.classList.toggle("menuActive");
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
@@ -58,7 +57,7 @@ template("home", async () => {
   cpl.classList.remove("selectedNav");
   al.classList.remove("selectedNav");
 
-  // setDefaults();
+  setDefaults();
 
   return myDiv;
 });
@@ -72,7 +71,7 @@ template("products", async () => {
   cpl.classList.remove("selectedNav");
   al.classList.remove("selectedNav");
 
-  // setDefaults();
+  setDefaults();
 
   return myDiv;
 });
@@ -85,7 +84,7 @@ template("company-profile", async () => {
   cpl.classList.add("selectedNav");
   al.classList.remove("selectedNav");
 
-  // setDefaults();
+  setDefaults();
 
   return myDiv;
 });
@@ -99,7 +98,7 @@ template("about", async () => {
   cpl.classList.remove("selectedNav");
   al.classList.add("selectedNav");
 
-  // setDefaults();
+  setDefaults();
 
   return myDiv;
 });
@@ -112,7 +111,7 @@ template("contact", async () => {
   cpl.classList.remove("selectedNav");
   al.classList.remove("selectedNav");
 
-  // setDefaults();
+  setDefaults();
 
   return myDiv;
 });
