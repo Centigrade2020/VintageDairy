@@ -1,8 +1,10 @@
-emailjs.init("user_jPvpFZ5eOyUbbOPoxAPYC");
-let form = document.getElementById('myform')
+(function () {
+  emailjs.init("user_jPvpFZ5eOyUbbOPoxAPYC");
+})();
 
-function sendMail(){
- 
+let form = document.getElementById("myform");
+
+function sendMail() {
   let name = document.getElementById("name").value;
   let email = document.getElementById("email").value;
   let phonenumber = document.getElementById("phone").value;
@@ -15,15 +17,15 @@ function sendMail(){
     const contactParams = {
       from_name: name,
       from_email: email,
-      from_phonenumber:phonenumber,
-      from_quantity:quantity,
-      from_description:description,
+      from_phonenumber: phonenumber,
+      from_quantity: quantity,
+      from_description: description,
       from_message: "test",
     };
     emailjs
       .send("service_qi07cwl", "template_clfjccd", contactParams)
       .then((res) => {
-        console.log("Email sent status = ",res.text);
+        console.log("Email sent status = ", res.text);
       });
 
     // -------------------------Data to spreadsheet----------------------
@@ -47,17 +49,17 @@ function sendMail(){
         quantity = "";
         email = "";
         description = "";
-        alert("Successfully submit your inquiry")
-        window.location.reload()
+        alert("Successfully submit your inquiry");
+        window.location.reload();
       }
     });
     // -------------------------------------------------------------------
-  }else{
-    alert("Enter all fields")
+  } else {
+    alert("Enter all fields");
   }
 }
 
 // const sendMail = (e) => {
 //   e.preventDe
- 
+
 // };

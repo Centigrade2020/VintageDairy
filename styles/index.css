@@ -449,18 +449,15 @@ footer .footerSocial img {
     display: flex;
   }
   .menuContent {
-    display: flex;
+    display: none;
   }
   .menuActive {
-    display: none;
+    display: flex;
   }
 }
 
 @media screen and (max-width: 700px) {
   .bgLayer {
-    display: none;
-  }
-  .menuActive {
     display: none;
   }
 

@@ -43,7 +43,7 @@ let route = (path, template) => {
 };
 
 function setDefaults() {
-  menuContent.classList.toggle("menuActive");
+  menuContent.classList.remove("menuActive");
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
