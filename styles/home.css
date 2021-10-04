@@ -34,9 +34,29 @@
 }
 
 .homeWrapper h1 {
+  visibility: hidden;
   font-size: 3rem;
   font-family: "Roboto", sans-serif;
   margin-bottom: 5vh;
+}
+
+.homeWrapper.scrolled h1 {
+  visibility: visible;
+  animation: anim 3s ease-in-out;
+}
+
+@keyframes anim {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  80% {
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
 }
 
 .homeWrapper > p {
