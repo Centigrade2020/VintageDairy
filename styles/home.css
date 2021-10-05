@@ -42,7 +42,7 @@
 
 .homeWrapper.scrolled h1 {
   visibility: visible;
-  animation: anim 3s ease-in-out;
+  animation: anim 1s ease-in-out;
 }
 
 @keyframes anim {
