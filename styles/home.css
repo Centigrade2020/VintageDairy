@@ -270,11 +270,12 @@
     margin: 5vh auto;
     /* background-color: red; */
   }
-  .homeWrapper h1 {
+  .homeWrapper h1{
     font-size: 2rem;
     font-family: "Roboto", sans-serif;
     text-align: center;
     margin-bottom: 5vh;
+    z-index: 100;
   }
   .homeWrapper p {
     width: 60%;
