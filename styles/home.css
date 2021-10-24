@@ -33,16 +33,119 @@
   margin-left: 10%;
 }
 
-.homeWrapper h1 {
-  visibility: hidden;
+.homeWrapper > h1 {
+  /* visibility: hidden; */
   font-size: 3rem;
   font-family: "Roboto", sans-serif;
   margin-bottom: 5vh;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+  width: max-content;
 }
 
-.homeWrapper.scrolled h1 {
+.homeWrapper > h1 span {
+  position: absolute;
+  top: 0;
+  right: -60%;
+  list-style: none;
+  font-family: "Roboto", sans-serif;
+}
+
+/* .homeWrapper.scrolled h1 {
   visibility: visible;
   animation: anim 1s ease-in-out;
+} */
+
+.hwH {
+  display: flex;
+  gap: 6px;
+  position: relative;
+  width: fit-content;
+  height: 200%;
+  /* overflow: hidden; */
+}
+
+.hwH h1:nth-child(2) {
+  position: relative;
+  background-color: lavender;
+}
+.hwH h1:nth-child(2) span {
+  color: transparent;
+}
+.hwH h1:nth-child(2) div:nth-child(1) {
+  position: absolute;
+  top: 0%;
+  left: 0;
+}
+.hwH h1:nth-child(2) div:nth-child(2) {
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+.hwH h1:nth-child(2) div:nth-child(3) {
+  position: absolute;
+  top: 200%;
+  left: 0;
+}
+.hwH h1:nth-child(2) div:nth-child(4) {
+  position: absolute;
+  top: 300%;
+  left: 0;
+}
+
+.Hwrapper {
+  display: inline-flex;
+}
+
+.Hwrapper .staticTxt {
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.Hwrapper .dynamicTxt {
+  margin-left: 15px;
+  height: 90px;
+  line-height: 90px;
+  overflow: hidden;
+}
+
+.dynamicTxt li {
+  list-style: none;
+  font-size: 60px;
+  font-weight: 600;
+  position: relative;
+  top: 0;
+  animation: slide 6s steps(4) infinite;
+}
+
+@keyframes slide {
+  100% {
+    top: -360px;
+  }
+}
+.dynamicTxt li span {
+  color: var(--primary);
+  position: relative;
+}
+
+.dynamicTxt li span::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  background-color: white;
+  border-left: 2px solid var(--primary);
+  animation: typing 1s steps(8) infinite;
+}
+
+@keyframes typing {
+  100% {
+    left: 100%;
+    margin: 0 -35px 0 35px;
+  }
 }
 
 @keyframes anim {
@@ -270,7 +373,7 @@
     margin: 5vh auto;
     /* background-color: red; */
   }
-  .homeWrapper h1{
+  .homeWrapper h1 {
     font-size: 2rem;
     font-family: "Roboto", sans-serif;
     text-align: center;
