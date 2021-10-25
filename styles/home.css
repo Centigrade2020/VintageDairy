@@ -138,7 +138,7 @@
   left: 0;
   background-color: white;
   border-left: 2px solid var(--primary);
-  animation: typing 1s steps(8) infinite;
+  animation: typing 1.5s steps(8) infinite;
 }
 
 @keyframes typing {
@@ -360,6 +360,27 @@
     font-weight: 600;
     transform: translateY(-7vh);
   }
+
+  .Hwrapper {
+    margin-bottom: 20px;
+  }
+  .Hwrapper .staticTxt {
+    font-size: 20px;
+  }
+
+  .Hwrapper .dynamicTxt {
+    height: 30px;
+    line-height: 30px;
+  }
+
+  .dynamicTxt li {
+    font-size: 20px;
+  }
+  @keyframes slide {
+    100% {
+      top: -120px;
+    }
+  }
 }
 
 @media screen and (max-width: 700px) {
@@ -381,7 +402,7 @@
     z-index: 100;
   }
   .homeWrapper p {
-    width: 60%;
+    width: 80%;
   }
 
   .desktopHidden {
