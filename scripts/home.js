@@ -1,4 +1,4 @@
-const scrollElements = document.getElementsByClassName("homeWrapper");
+const scrollElements = document.getElementsByClassName("scroll");
 
 const elementInView = (el, dividend = 1) => {
   const elementTop = el.getBoundingClientRect().top;
