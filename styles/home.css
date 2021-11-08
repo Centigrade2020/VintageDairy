@@ -403,6 +403,7 @@
 .tesname {
   font-weight: bold;
   font-size: large;
+  width: max-content;
   color: var(--primary);
 }
 .tes2 {
