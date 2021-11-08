@@ -354,10 +354,14 @@
   /* border-top: 1px solid var(--primary); */
   /* border-left: 1px solid var(--primary); */
 }
+.checked {
+  color: orange;
+}
 
 .tesImg {
   width: 60px;
   height: 60px;
+
   border-radius: 50%;
   overflow: hidden;
   display: flex;
@@ -373,6 +377,7 @@
   display: flex;
   align-items: center;
   gap: 30px;
+  margin-top: 30px;
   padding-bottom: 15px;
 }
 
