@@ -332,6 +332,84 @@
   display: none;
 }
 
+.testimony {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 10vh;
+  position: relative;
+  padding-top: 13vh;
+}
+
+.tescard {
+  width: 500px;
+  /* background-color: rgb(241, 241, 241); */
+  background-color: rgb(255, 255, 255);
+  backdrop-filter: blur(20px);
+  padding: 30px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  /* border-top: 1px solid var(--primary); */
+  /* border-left: 1px solid var(--primary); */
+}
+
+.tesImg {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid brown; */
+}
+.tesImg img {
+  width: inherit;
+}
+
+.tes1 {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding-bottom: 15px;
+}
+
+.testimony > h1 {
+  position: absolute;
+  top: 0;
+  left: 10%;
+  color: var(--black);
+  font-size: 3rem;
+  transition: 300ms;
+}
+
+.testimony > h1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 2%;
+  height: 100%;
+  width: 60%;
+  border-bottom: 2px solid var(--primary);
+}
+
+.tesname {
+  font-weight: bold;
+  font-size: large;
+  color: var(--primary);
+}
+.tes2 {
+  display: flex;
+  width: 90%;
+  margin: auto;
+}
+
+.tespara {
+  text-align: justify;
+}
+
 @media screen and (max-width: 1170px) {
   .homeContainer1 .hc1Card {
     position: absolute;
@@ -474,5 +552,16 @@
     margin: 12vh auto 0 auto;
     display: flex;
     flex-direction: column;
+  }
+
+  .testimony {
+    margin-bottom: 20px;
+  }
+
+  .testimony > h1 {
+    font-size: 2rem;
+  }
+  .tescard {
+    margin-bottom: 50px;
   }
 }
